@@ -19,7 +19,10 @@ export const team: TeamMember[] = [
     slug: "salih-seref-kosova",
     name: "Salih Şeref Kosova",
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
-    photo: "/images/team/salih-seref-kosova.jpg",
+    // Stock photo (Unsplash, free license) — swap for a real portrait when
+    // available. Photo: Tony Luginsland — see public/images/CREDITS.md.
+    photo:
+      "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?w=800&h=1000&fit=crop&fm=jpg&q=80",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -49,7 +52,10 @@ export const team: TeamMember[] = [
     slug: "zeynep-aksu-kosova",
     name: "Zeynep Aksu Kosova",
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريكة مؤسسة" },
-    photo: "/images/team/zeynep-aksu-kosova.jpg",
+    // Stock photo (Unsplash, free license) — swap for a real portrait when
+    // available. Photo: Troy Spoelma — see public/images/CREDITS.md.
+    photo:
+      "https://images.unsplash.com/photo-1701096374092-bb70915fdc5c?w=800&h=1000&fit=crop&fm=jpg&q=80",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -78,8 +84,11 @@ export const team: TeamMember[] = [
   {
     slug: "mehmet-can-gonul",
     name: "Mehmet Can Gönül",
-    title: { tr: "Avukat", en: "Attorney", ar: "محامٍ" },
-    photo: "/images/team/mehmet-can-gonul.jpg",
+    title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
+    // Stock photo (Unsplash, free license) — swap for a real portrait when
+    // available. Photo: Jeppe Mønster — see public/images/CREDITS.md.
+    photo:
+      "https://images.unsplash.com/photo-1648474484044-bb82df2f5a1f?w=800&h=1000&fit=crop&fm=jpg&q=80",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -100,9 +109,9 @@ export const team: TeamMember[] = [
       "icra-ve-iflas-hukuku",
     ],
     bio: {
-      tr: "[TASLAK] Mehmet Can Gönül, Kosova Hukuk Bürosu'nda avukat olarak görev yapmaktadır. Ceza hukuku, ticaret hukuku ve icra-iflas hukuku alanlarında dava takibi ve danışmanlık hizmeti vermektedir.",
-      en: "[DRAFT] Mehmet Can Gönül is an attorney at Kosova Law Firm. He provides litigation and advisory services in criminal law, commercial law, and enforcement & bankruptcy law.",
-      ar: "[مسودة] محمد جان غونول محامٍ في مكتب كوسوفا للمحاماة. يقدم خدمات التقاضي والاستشارات في القانون الجنائي والقانون التجاري وقانون التنفيذ والإفلاس.",
+      tr: "[TASLAK] Mehmet Can Gönül, Kosova Hukuk Bürosu'nun kurucu ortaklarındandır. Ceza hukuku, ticaret hukuku ve icra-iflas hukuku alanlarında dava takibi ve danışmanlık hizmeti vermektedir.",
+      en: "[DRAFT] Mehmet Can Gönül is a founding partner of Kosova Law Firm. He provides litigation and advisory services in criminal law, commercial law, and enforcement & bankruptcy law.",
+      ar: "[مسودة] محمد جان غونول شريك مؤسس في مكتب كوسوفا للمحاماة. يقدم خدمات التقاضي والاستشارات في القانون الجنائي والقانون التجاري وقانون التنفيذ والإفلاس.",
     },
   },
 ];

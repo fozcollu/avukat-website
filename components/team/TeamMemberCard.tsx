@@ -1,6 +1,6 @@
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import PortraitImage from "@/components/ui/PortraitImage";
 import type { TeamMember } from "@/content/team";
 import type { AppLocale } from "@/i18n/routing";
 
@@ -12,9 +12,9 @@ export default function TeamMemberCard({ member }: { member: TeamMember }) {
       href={`/ekibimiz/${member.slug}`}
       className="group block overflow-hidden rounded-xl border border-ink/10 bg-white transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-lg hover:shadow-ink/5"
     >
-      <ImagePlaceholder
-        expectedSrc={member.photo}
-        label={member.name}
+      <PortraitImage
+        src={member.photo}
+        alt={member.name}
         rounded=""
         className="aspect-[4/5] w-full"
       />

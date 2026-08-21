@@ -1,6 +1,12 @@
 import { useTranslations } from "next-intl";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+
+// Stock photo (Unsplash, free license) — swap for a real office photo or
+// AI-generated image when available. Photo: Revendo — see
+// public/images/CREDITS.md.
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1682579770385-4d725efef9c7?w=1920&h=1080&fit=crop&fm=jpg&q=80";
 
 export default function Hero() {
   const t = useTranslations("home.hero");
@@ -9,12 +15,16 @@ export default function Hero() {
     <>
       {/* Full-bleed photo band — no text overlay, mirrors the reference
           site's photo-first hero. Headline/CTA live in the section below. */}
-      <ImagePlaceholder
-        expectedSrc="/images/hero/office-hero.jpg"
-        label="Ofis görseli — AI ile üretilecek"
-        rounded=""
-        className="h-[70vh] max-h-[640px] w-full"
-      />
+      <div className="relative h-[70vh] max-h-[640px] w-full">
+        <Image
+          src={HERO_IMAGE}
+          alt="Kosova Hukuk Bürosu ofisi"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
 
       <section className="bg-white py-14 sm:py-16">
         <div className="mx-auto w-full max-w-6xl px-6">
