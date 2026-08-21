@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Noto_Kufi_Arabic } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -17,6 +17,16 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+
+// Latin fonts above have no Arabic glyphs — this covers both headings and
+// body text for the "ar" locale. See globals.css `[dir="rtl"]` override,
+// which swaps --font-serif/--font-sans to this family.
+const notoKufiArabic = Noto_Kufi_Arabic({
+  variable: "--font-arabic",
+  subsets: ["arabic"],
+});
+
+const RTL_LOCALES = ["ar"];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -50,11 +60,13 @@ export default async function LocaleLayout({
     notFound();
   }
   setRequestLocale(locale);
+  const dir = RTL_LOCALES.includes(locale) ? "rtl" : "ltr";
 
   return (
     <html
       lang={locale}
-      className={`${playfair.variable} ${inter.variable} h-full antialiased`}
+      dir={dir}
+      className={`${playfair.variable} ${inter.variable} ${notoKufiArabic.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
         <NextIntlClientProvider>

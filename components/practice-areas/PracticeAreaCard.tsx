@@ -2,10 +2,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import type { PracticeArea } from "@/content/practiceAreas";
+import type { AppLocale } from "@/i18n/routing";
 import { getPracticeAreaIcon } from "./icon-map";
 
 export default function PracticeAreaCard({ area }: { area: PracticeArea }) {
-  const locale = useLocale() as "tr" | "en";
+  const locale = useLocale() as AppLocale;
   const t = useTranslations("services");
   const Icon = getPracticeAreaIcon(area.icon);
 

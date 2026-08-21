@@ -28,14 +28,21 @@ export default function Header() {
       <Container className="flex h-20 items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-2 font-serif text-lg text-ink"
+          className="flex items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
-          <Scale className="h-5 w-5 text-accent" strokeWidth={1.5} />
-          {tMeta("siteName")}
+          <Scale className="h-6 w-6 shrink-0 text-accent" strokeWidth={1.5} />
+          <span className="leading-tight">
+            <span className="block font-serif text-lg font-bold text-ink">
+              {tMeta("siteName")}
+            </span>
+            <span className="block text-[11px] font-medium uppercase tracking-widest text-slate">
+              {tMeta("tagline")}
+            </span>
+          </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {navItems.map((item) => {
             const active =
               item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -43,8 +50,8 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors ${
-                  active ? "text-accent" : "text-ink/75 hover:text-ink"
+                className={`text-xs font-bold uppercase tracking-wide transition-colors ${
+                  active ? "text-accent" : "text-ink/80 hover:text-ink"
                 }`}
               >
                 {t(item.key)}
@@ -75,7 +82,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-2 py-3 text-sm font-medium text-ink/80 hover:bg-mist hover:text-ink"
+                className="rounded-lg px-2 py-3 text-xs font-bold uppercase tracking-wide text-ink/80 hover:bg-mist hover:text-ink"
               >
                 {t(item.key)}
               </Link>

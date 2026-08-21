@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 const labels: Record<string, string> = {
   tr: "TR",
   en: "EN",
+  ar: "AR",
 };
 
 export default function LanguageSwitcher({ dark = false }: { dark?: boolean }) {

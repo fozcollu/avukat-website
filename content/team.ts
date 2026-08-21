@@ -5,26 +5,31 @@
 export type TeamMember = {
   slug: string;
   name: string;
-  title: { tr: string; en: string };
+  title: { tr: string; en: string; ar: string };
   photo: string;
-  education: { tr: string[]; en: string[] };
-  barAdmission: { tr: string; en: string };
+  education: { tr: string[]; en: string[]; ar: string[] };
+  barAdmission: { tr: string; en: string; ar: string };
   languages: string[];
   practiceAreaSlugs: string[];
-  bio: { tr: string; en: string };
+  bio: { tr: string; en: string; ar: string };
 };
 
 export const team: TeamMember[] = [
   {
     slug: "salih-seref-kosova",
     name: "Salih Şeref Kosova",
-    title: { tr: "Kurucu Avukat", en: "Founding Partner" },
+    title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
     photo: "/images/team/salih-seref-kosova.jpg",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
+      ar: ["[مسودة] كلية الحقوق، بكالوريوس"],
     },
-    barAdmission: { tr: "[TASLAK] İstanbul Barosu", en: "[DRAFT] Istanbul Bar Association" },
+    barAdmission: {
+      tr: "[TASLAK] İstanbul Barosu",
+      en: "[DRAFT] Istanbul Bar Association",
+      ar: "[مسودة] نقابة محامي إسطنبول",
+    },
     languages: ["Türkçe", "English"],
     practiceAreaSlugs: [
       "aile-ve-miras-hukuku",
@@ -37,18 +42,24 @@ export const team: TeamMember[] = [
     bio: {
       tr: "[TASLAK] Salih Şeref Kosova, Kosova Hukuk Bürosu'nun kurucu ortağıdır. Ticaret hukuku, aile hukuku ve icra-iflas hukuku başta olmak üzere geniş bir yelpazede müvekkillerine danışmanlık ve dava takibi hizmeti sunmaktadır.",
       en: "[DRAFT] Salih Şeref Kosova is the founding partner of Kosova Law Firm. He advises and represents clients across a broad range of matters, primarily commercial law, family law, and enforcement & bankruptcy law.",
+      ar: "[مسودة] صالح شرف كوسوفا هو الشريك المؤسس لمكتب كوسوفا للمحاماة. يقدم الاستشارات ويمثل الموكلين في نطاق واسع من المسائل، أبرزها القانون التجاري وقانون الأسرة وقانون التنفيذ والإفلاس.",
     },
   },
   {
     slug: "zeynep-aksu-kosova",
     name: "Zeynep Aksu Kosova",
-    title: { tr: "Kurucu Avukat", en: "Founding Partner" },
+    title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريكة مؤسسة" },
     photo: "/images/team/zeynep-aksu-kosova.jpg",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
+      ar: ["[مسودة] كلية الحقوق، بكالوريوس"],
     },
-    barAdmission: { tr: "[TASLAK] İstanbul Barosu", en: "[DRAFT] Istanbul Bar Association" },
+    barAdmission: {
+      tr: "[TASLAK] İstanbul Barosu",
+      en: "[DRAFT] Istanbul Bar Association",
+      ar: "[مسودة] نقابة محامي إسطنبول",
+    },
     languages: ["Türkçe", "English"],
     practiceAreaSlugs: [
       "aile-ve-miras-hukuku",
@@ -61,18 +72,24 @@ export const team: TeamMember[] = [
     bio: {
       tr: "[TASLAK] Zeynep Aksu Kosova, Kosova Hukuk Bürosu'nun kurucu ortağıdır. Aile ve miras hukuku, gayrimenkul hukuku ve iş hukuku alanlarında müvekkillerine danışmanlık ve dava takibi hizmeti sunmaktadır.",
       en: "[DRAFT] Zeynep Aksu Kosova is a founding partner of Kosova Law Firm. She advises and represents clients primarily in family & inheritance law, real estate law, and employment law.",
+      ar: "[مسودة] زينب أكسو كوسوفا شريكة مؤسسة في مكتب كوسوفا للمحاماة. تقدم الاستشارات وتمثل الموكلين بشكل أساسي في قانون الأسرة والميراث، وقانون العقارات، وقانون العمل.",
     },
   },
   {
     slug: "mehmet-can-gonul",
     name: "Mehmet Can Gönül",
-    title: { tr: "Avukat", en: "Attorney" },
+    title: { tr: "Avukat", en: "Attorney", ar: "محامٍ" },
     photo: "/images/team/mehmet-can-gonul.jpg",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
+      ar: ["[مسودة] كلية الحقوق، بكالوريوس"],
     },
-    barAdmission: { tr: "[TASLAK] İstanbul Barosu", en: "[DRAFT] Istanbul Bar Association" },
+    barAdmission: {
+      tr: "[TASLAK] İstanbul Barosu",
+      en: "[DRAFT] Istanbul Bar Association",
+      ar: "[مسودة] نقابة محامي إسطنبول",
+    },
     languages: ["Türkçe", "English"],
     practiceAreaSlugs: [
       "aile-ve-miras-hukuku",
@@ -85,6 +102,7 @@ export const team: TeamMember[] = [
     bio: {
       tr: "[TASLAK] Mehmet Can Gönül, Kosova Hukuk Bürosu'nda avukat olarak görev yapmaktadır. Ceza hukuku, ticaret hukuku ve icra-iflas hukuku alanlarında dava takibi ve danışmanlık hizmeti vermektedir.",
       en: "[DRAFT] Mehmet Can Gönül is an attorney at Kosova Law Firm. He provides litigation and advisory services in criminal law, commercial law, and enforcement & bankruptcy law.",
+      ar: "[مسودة] محمد جان غونول محامٍ في مكتب كوسوفا للمحاماة. يقدم خدمات التقاضي والاستشارات في القانون الجنائي والقانون التجاري وقانون التنفيذ والإفلاس.",
     },
   },
 ];

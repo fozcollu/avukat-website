@@ -2,9 +2,10 @@ import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import type { TeamMember } from "@/content/team";
+import type { AppLocale } from "@/i18n/routing";
 
 export default function TeamMemberCard({ member }: { member: TeamMember }) {
-  const locale = useLocale() as "tr" | "en";
+  const locale = useLocale() as AppLocale;
 
   return (
     <Link

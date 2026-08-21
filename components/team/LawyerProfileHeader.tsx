@@ -1,9 +1,10 @@
 import { useLocale } from "next-intl";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import type { TeamMember } from "@/content/team";
+import type { AppLocale } from "@/i18n/routing";
 
 export default function LawyerProfileHeader({ member }: { member: TeamMember }) {
-  const locale = useLocale() as "tr" | "en";
+  const locale = useLocale() as AppLocale;
 
   return (
     <div className="grid gap-8 sm:grid-cols-[220px_1fr] sm:items-start">

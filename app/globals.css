@@ -31,6 +31,13 @@ body {
   color: var(--foreground);
 }
 
+/* Arabic (RTL): swap both type families for one that actually has Arabic
+   glyphs — the Latin serif/sans set above renders blank/tofu otherwise. */
+[dir="rtl"] {
+  --font-serif: var(--font-arabic);
+  --font-sans: var(--font-arabic);
+}
+
 ::selection {
   background: var(--color-accent);
   color: var(--color-white);
