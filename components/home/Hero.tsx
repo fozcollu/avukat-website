@@ -21,6 +21,7 @@ export default function Hero() {
           alt="Kosova Hukuk Bürosu ofisi"
           fill
           priority
+          unoptimized
           sizes="100vw"
           className="object-cover"
         />

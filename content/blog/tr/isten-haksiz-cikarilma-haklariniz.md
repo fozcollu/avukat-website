@@ -5,7 +5,7 @@ date: "2026-07-22"
 excerpt: "İş sözleşmesi işveren tarafından haksız şekilde feshedilen çalışanların işe iade, kıdem ve ihbar tazminatı hakları bu yazıda özetlenmiştir."
 practiceAreaSlug: "is-hukuku"
 author: "mehmet-can-gonul"
-coverImage: "/images/blog/isten-cikarilma.jpg"
+coverImage: "https://images.unsplash.com/photo-1759310610325-2c7cb621e5e3?w=1200&h=675&fit=crop&fm=jpg&q=80"
 ---
 
 İş sözleşmesinin işveren tarafından geçerli bir sebep olmaksızın feshedilmesi durumunda, iş güvencesi kapsamındaki çalışanlar bazı yasal haklara sahiptir.

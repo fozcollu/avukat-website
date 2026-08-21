@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import PortraitImage from "@/components/ui/PortraitImage";
 import type { BlogPostMeta } from "@/lib/blog";
 
 export default function BlogPostCard({
@@ -28,10 +28,12 @@ export default function BlogPostCard({
           : "border-ink/10 bg-white hover:border-accent/40 hover:shadow-lg hover:shadow-ink/5"
       }`}
     >
-      <ImagePlaceholder
-        expectedSrc={post.coverImage}
+      <PortraitImage
+        src={post.coverImage}
+        alt={post.title}
         rounded=""
         dark={dark}
+        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         className="aspect-[16/9] w-full"
       />
       <div className="flex flex-1 flex-col p-5">

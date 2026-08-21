@@ -5,7 +5,7 @@ import type { AppLocale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/ui/Container";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import PortraitImage from "@/components/ui/PortraitImage";
 import MarkdownContent from "@/components/blog/MarkdownContent";
 import { getPostBySlug, getAllSlugs } from "@/lib/blog";
 import { getTeamMemberBySlug } from "@/content/team";
@@ -81,8 +81,10 @@ export default async function BlogPostPage({
         </div>
       </div>
 
-      <ImagePlaceholder
-        expectedSrc={post.coverImage}
+      <PortraitImage
+        src={post.coverImage}
+        alt={post.title}
+        sizes="(min-width: 640px) 42rem, 100vw"
         className="mt-8 aspect-[16/9] w-full max-w-2xl"
       />
 
