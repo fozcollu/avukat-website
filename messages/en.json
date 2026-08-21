@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "siteName": "Kosova Law Firm",
+    "defaultTitle": "Kosova Law Firm",
+    "defaultDescription": "Kosova Law Firm — an Istanbul-based, solution-focused law firm providing legal counsel and representation."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "team": "Our Team",
+    "services": "Practice Areas",
+    "blog": "Blog",
+    "career": "Careers",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Solution-focused legal counsel.",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact",
+    "kvkk": "Privacy Notice (KVKK)",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "label": "Language"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kosova Law Firm",
+      "title": "Solution-focused legal counsel and representation",
+      "subtitle": "From family and inheritance law to commercial law, from employment law to criminal law — by our clients' side at every stage of a dispute.",
+      "cta": "Get in Touch",
+      "ctaSecondary": "Explore Our Services"
+    },
+    "services": {
+      "title": "Practice Areas",
+      "subtitle": "We provide advisory and litigation services across a wide range of legal fields through our specialized team.",
+      "cta": "All Practice Areas"
+    },
+    "about": {
+      "title": "About Us",
+      "body": "Kosova Law Firm is an Istanbul-based firm providing legal counsel and litigation services to individuals and businesses. Through the trust we build with our clients and our solution-focused approach, we stand by them at every stage of a dispute.",
+      "cta": "Learn About Our Firm"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet our team of specialized lawyers.",
+      "cta": "View Full Team"
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Our articles on current legal developments and our areas of expertise.",
+      "cta": "All Articles",
+      "empty": "No articles have been published yet."
+    },
+    "cta": {
+      "title": "Need support with a legal matter?",
+      "subtitle": "Send us your request and we will get back to you as soon as possible.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "intro": "Kosova Law Firm",
+    "body1": "Kosova Law Firm is an Istanbul-based firm providing legal counsel and litigation services to individual and corporate clients. We serve across a wide range of practice areas, primarily family and inheritance law, employment law, commercial and corporate law, criminal law, real estate law, and enforcement and bankruptcy law.",
+    "body2": "Our working principle is to correctly understand our clients' needs, provide preventative legal support by anticipating disputes as early as possible, and keep clients informed transparently and regularly throughout the process. In addition to litigation and enforcement proceedings, we also guide our clients through alternative dispute resolution methods such as mediation.",
+    "body3": "Our team consists of lawyers experienced in different areas of expertise; on every matter, our lawyers specializing in the relevant field work together to provide our clients with comprehensive legal support.",
+    "valuesTitle": "Our Working Principles",
+    "values": [
+      { "title": "Trust", "body": "We build client relationships on transparency and honesty." },
+      { "title": "Solution Focus", "body": "We prioritize the most effective and practical solution in every dispute." },
+      { "title": "Specialization", "body": "We work with lawyers experienced in the relevant field for every matter." },
+      { "title": "Accessibility", "body": "We keep our clients informed regularly and clearly throughout the process." }
+    ]
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "The lawyers of Kosova Law Firm.",
+    "practiceAreasLabel": "Practice Areas",
+    "languagesLabel": "Languages",
+    "educationLabel": "Education",
+    "barLabel": "Bar Admission",
+    "backToTeam": "Back to Team"
+  },
+  "services": {
+    "title": "Practice Areas",
+    "subtitle": "The legal fields we specialize in.",
+    "detailCta": "Read More",
+    "lawyersTitle": "Lawyers Working in This Area",
+    "backToServices": "Back to Practice Areas"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Current legal developments and our articles.",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "authorLabel": "Author",
+    "relatedAreaLabel": "Related Area",
+    "empty": "No articles have been published in this language yet."
+  },
+  "career": {
+    "title": "Careers",
+    "subtitle": "Join the Kosova Law Firm team",
+    "body": "We welcome applications for trainee lawyer and lawyer positions at our firm. Even if there is no current opening, feel free to share your CV with us; we will reach out when a suitable position becomes available.",
+    "cta": "Send Your CV"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Reach out to us with your questions and requests.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "formTitle": "Write to Us",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Your Message",
+      "submit": "Send",
+      "consent": "By submitting this form, I consent to the processing of my personal data under the KVKK Privacy Notice."
+    }
+  },
+  "kvkk": {
+    "title": "Privacy Notice (KVKK)",
+    "draftNotice": "[DRAFT — This text is placeholder content pending review and approval by the client / legal counsel.]"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "body": "The page you are looking for does not exist or may have moved.",
+    "cta": "Back to Home"
+  }
+}

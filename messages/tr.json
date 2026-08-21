@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "siteName": "Kosova Hukuk Bürosu",
+    "defaultTitle": "Kosova Hukuk Bürosu",
+    "defaultDescription": "Kosova Hukuk Bürosu — İstanbul merkezli, çözüm odaklı avukatlık ve hukuki danışmanlık bürosu."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "team": "Ekibimiz",
+    "services": "Hizmetlerimiz",
+    "blog": "Blog",
+    "career": "Kariyer",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "tagline": "Çözüm odaklı hukuki danışmanlık.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactTitle": "İletişim",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "language": {
+    "label": "Dil"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Kosova Hukuk Bürosu",
+      "title": "Çözüm odaklı hukuki danışmanlık ve avukatlık hizmetleri",
+      "subtitle": "Aile ve miras hukukundan ticaret hukukuna, iş hukukundan ceza hukukuna; müvekkillerimizin yanında, uyuşmazlığın her aşamasında.",
+      "cta": "Bizimle İletişime Geçin",
+      "ctaSecondary": "Hizmetlerimizi İnceleyin"
+    },
+    "services": {
+      "title": "Hizmet Alanlarımız",
+      "subtitle": "Farklı hukuk dallarında uzmanlaşmış ekibimizle geniş bir yelpazede danışmanlık ve dava takibi sunuyoruz.",
+      "cta": "Tüm Hizmetlerimiz"
+    },
+    "about": {
+      "title": "Hakkımızda",
+      "body": "Kosova Hukuk Bürosu, İstanbul merkezli olarak gerçek ve tüzel kişilere hukuki danışmanlık ve dava takibi hizmeti sunan bir avukatlık bürosudur. Müvekkillerimizle kurduğumuz güvene dayalı ilişki ve çözüm odaklı yaklaşımımızla, uyuşmazlıkların her aşamasında yanlarında oluyoruz.",
+      "cta": "Bürömüzü Tanıyın"
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "subtitle": "Alanında uzman avukat kadromuzla tanışın.",
+      "cta": "Tüm Ekip"
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Güncel hukuki gelişmeler ve uzmanlık alanlarımızla ilgili yazılarımız.",
+      "cta": "Tüm Yazılar",
+      "empty": "Henüz yayınlanmış bir yazı bulunmuyor."
+    },
+    "cta": {
+      "title": "Hukuki bir konuda desteğe mi ihtiyacınız var?",
+      "subtitle": "Talebinizi bize iletin, en kısa sürede size dönüş yapalım.",
+      "button": "İletişime Geçin"
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "intro": "Kosova Hukuk Bürosu",
+    "body1": "Kosova Hukuk Bürosu, İstanbul merkezli olarak faaliyet gösteren, gerçek ve tüzel kişi müvekkillerine hukuki danışmanlık ve dava takibi hizmeti sunan bir avukatlık bürosudur. Bürolarımızda aile ve miras hukuku, iş hukuku, ticaret ve şirketler hukuku, ceza hukuku, gayrimenkul hukuku ile icra ve iflas hukuku başta olmak üzere geniş bir yelpazede hizmet veriyoruz.",
+    "body2": "Çalışma prensibimiz; müvekkillerimizin ihtiyaçlarını doğru anlamak, uyuşmazlıkları mümkün olduğunca erken aşamada öngörerek önleyici hukuki destek sunmak ve süreç boyunca şeffaf, düzenli bilgilendirme yapmaktır. Dava ve icra takibinin yanı sıra arabuluculuk gibi alternatif uyuşmazlık çözüm yöntemlerinde de müvekkillerimize rehberlik ediyoruz.",
+    "body3": "Ekibimiz, farklı uzmanlık alanlarında deneyimli avukatlardan oluşur; her dosyada ilgili alanın uzmanı avukatlarımız birlikte çalışarak müvekkillerimize bütüncül bir hukuki destek sağlar.",
+    "valuesTitle": "Çalışma İlkelerimiz",
+    "values": [
+      { "title": "Güven", "body": "Müvekkil ilişkilerimizi şeffaflık ve dürüstlük üzerine kurarız." },
+      { "title": "Çözüm Odaklılık", "body": "Her uyuşmazlıkta en etkin ve pratik çözümü önceliklendiririz." },
+      { "title": "Uzmanlaşma", "body": "Her hukuk alanında ilgili konuda deneyimli avukatlarımızla çalışırız." },
+      { "title": "Erişilebilirlik", "body": "Süreç boyunca müvekkillerimize düzenli ve anlaşılır bilgilendirme yaparız." }
+    ]
+  },
+  "team": {
+    "title": "Ekibimiz",
+    "subtitle": "Kosova Hukuk Bürosu avukat kadrosu.",
+    "practiceAreasLabel": "Çalışma Alanları",
+    "languagesLabel": "Diller",
+    "educationLabel": "Eğitim",
+    "barLabel": "Baro Sicili",
+    "backToTeam": "Ekibe Dön"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Uzmanlaştığımız hukuk alanları.",
+    "detailCta": "Devamını Oku",
+    "lawyersTitle": "Bu Alanda Çalışan Avukatlarımız",
+    "backToServices": "Hizmetlere Dön"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Güncel hukuki gelişmeler ve makalelerimiz.",
+    "readMore": "Devamını Oku",
+    "backToBlog": "Bloga Dön",
+    "authorLabel": "Yazan",
+    "relatedAreaLabel": "İlgili Alan",
+    "empty": "Bu dilde henüz yayınlanmış bir yazı bulunmuyor."
+  },
+  "career": {
+    "title": "Kariyer",
+    "subtitle": "Kosova Hukuk Bürosu ekibine katılın",
+    "body": "Bürolarımızda stajyer avukat ve avukat pozisyonları için başvuruları memnuniyetle değerlendiriyoruz. Güncel bir pozisyon ilan edilmemiş olsa dahi, özgeçmişinizi bizimle paylaşabilirsiniz; uygun bir pozisyon açıldığında sizinle iletişime geçeriz.",
+    "cta": "CV Gönder"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız ve talepleriniz için bize ulaşın.",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta",
+    "formTitle": "Bize Yazın",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "message": "Mesajınız",
+      "submit": "Gönder",
+      "consent": "Bu formu göndererek, KVKK Aydınlatma Metni kapsamında kişisel verilerimin işlenmesini kabul ediyorum."
+    }
+  },
+  "kvkk": {
+    "title": "KVKK Aydınlatma Metni",
+    "draftNotice": "[TASLAK — Bu metin müvekkil/hukuk danışmanı tarafından incelenip onaylanana kadar geçici içerik niteliğindedir.]"
+  },
+  "notFound": {
+    "title": "Sayfa Bulunamadı",
+    "body": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+    "cta": "Ana Sayfaya Dön"
+  }
+}
