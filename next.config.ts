@@ -5,10 +5,11 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
   images: {
-    // Stock photos (hero + team portraits) are referenced directly from
-    // Unsplash's CDN for now rather than downloaded locally — see
-    // public/images/CREDITS.md for the exact photos/photographers used and
-    // README.md "Görseller" for how to swap these for commissioned/AI photos.
+    // Hotlinking Unsplash stock photos turned out unreliable (the site
+    // currently uses local, network-free AbstractPanel/Monogram placeholders
+    // instead — see public/images/CREDITS.md for that history). Keep
+    // images.unsplash.com allowed in case a real Unsplash photo is used
+    // later; add any other real photo host here too.
     remotePatterns: [
       {
         protocol: "https",

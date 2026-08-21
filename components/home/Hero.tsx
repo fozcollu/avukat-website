@@ -1,31 +1,19 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { Scale } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-
-// Stock photo (Unsplash, free license) — swap for a real office photo or
-// AI-generated image when available. Photo: Revendo — see
-// public/images/CREDITS.md.
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1682579770385-4d725efef9c7?w=1920&h=1080&fit=crop&fm=jpg&q=80";
+import AbstractPanel from "@/components/ui/AbstractPanel";
 
 export default function Hero() {
   const t = useTranslations("home.hero");
 
   return (
     <>
-      {/* Full-bleed photo band — no text overlay, mirrors the reference
-          site's photo-first hero. Headline/CTA live in the section below. */}
-      <div className="relative h-[70vh] max-h-[640px] w-full">
-        <Image
-          src={HERO_IMAGE}
-          alt="Kosova Hukuk Bürosu ofisi"
-          fill
-          priority
-          unoptimized
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
+      {/* Full-bleed band — no text overlay, mirrors the reference site's
+          photo-first hero. Headline/CTA live in the section below. Swap
+          AbstractPanel for a real/AI office photo once available (see
+          public/images/PROMPTS.md) — drop the file in public/images/hero/
+          and render it with next/image here instead. */}
+      <AbstractPanel icon={Scale} className="h-[70vh] max-h-[640px] w-full" />
 
       <section className="bg-white py-14 sm:py-16">
         <div className="mx-auto w-full max-w-6xl px-6">

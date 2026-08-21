@@ -2,6 +2,9 @@ import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import PortraitImage from "@/components/ui/PortraitImage";
+import AbstractPanel from "@/components/ui/AbstractPanel";
+import { getPracticeAreaBySlug } from "@/content/practiceAreas";
+import { getPracticeAreaIcon } from "@/components/practice-areas/icon-map";
 import type { BlogPostMeta } from "@/lib/blog";
 
 export default function BlogPostCard({
@@ -28,14 +31,23 @@ export default function BlogPostCard({
           : "border-ink/10 bg-white hover:border-accent/40 hover:shadow-lg hover:shadow-ink/5"
       }`}
     >
-      <PortraitImage
-        src={post.coverImage}
-        alt={post.title}
-        rounded=""
-        dark={dark}
-        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-        className="aspect-[16/9] w-full"
-      />
+      {post.coverImage ? (
+        <PortraitImage
+          src={post.coverImage}
+          alt={post.title}
+          rounded=""
+          dark={dark}
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="aspect-[16/9] w-full"
+        />
+      ) : (
+        <AbstractPanel
+          icon={getPracticeAreaIcon(
+            getPracticeAreaBySlug(post.practiceAreaSlug)?.icon ?? ""
+          )}
+          className="aspect-[16/9] w-full"
+        />
+      )}
       <div className="flex flex-1 flex-col p-5">
         <p className={`text-xs uppercase tracking-wide ${dark ? "text-white/40" : "text-slate"}`}>
           {date}

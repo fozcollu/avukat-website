@@ -6,10 +6,12 @@ import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/ui/Container";
 import PortraitImage from "@/components/ui/PortraitImage";
+import AbstractPanel from "@/components/ui/AbstractPanel";
 import MarkdownContent from "@/components/blog/MarkdownContent";
 import { getPostBySlug, getAllSlugs } from "@/lib/blog";
 import { getTeamMemberBySlug } from "@/content/team";
 import { getPracticeAreaBySlug } from "@/content/practiceAreas";
+import { getPracticeAreaIcon } from "@/components/practice-areas/icon-map";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -81,12 +83,20 @@ export default async function BlogPostPage({
         </div>
       </div>
 
-      <PortraitImage
-        src={post.coverImage}
-        alt={post.title}
-        sizes="(min-width: 640px) 42rem, 100vw"
-        className="mt-8 aspect-[16/9] w-full max-w-2xl"
-      />
+      {post.coverImage ? (
+        <PortraitImage
+          src={post.coverImage}
+          alt={post.title}
+          sizes="(min-width: 640px) 42rem, 100vw"
+          className="mt-8 aspect-[16/9] w-full max-w-2xl"
+        />
+      ) : (
+        <AbstractPanel
+          icon={getPracticeAreaIcon(area?.icon ?? "")}
+          rounded="rounded-xl"
+          className="mt-8 aspect-[16/9] w-full max-w-2xl"
+        />
+      )}
 
       <MarkdownContent html={post.contentHtml} />
     </Container>
