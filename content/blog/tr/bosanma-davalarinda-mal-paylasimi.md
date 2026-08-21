@@ -5,7 +5,7 @@ date: "2026-06-10"
 excerpt: "Evlilik birliği içinde edinilen malların paylaşımı, boşanma sürecinin en çok merak edilen konularından biridir. Bu yazıda mal rejimi ve paylaşım esaslarını özetliyoruz."
 practiceAreaSlug: "aile-ve-miras-hukuku"
 author: "zeynep-aksu-kosova"
-coverImage: "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=1200&h=675&fit=crop&fm=jpg&q=80"
+coverImage: "/images/blog/bosanma-mal-paylasimi.jpg"
 ---
 
 Türk hukukunda, evlilik birliği içinde edinilen malların paylaşımı büyük ölçüde eşler arasındaki **mal rejimi**ne göre belirlenir. Kanunda aksi kararlaştırılmadıkça, evlilik tarihinden itibaren eşler arasında **edinilmiş mallara katılma rejimi** uygulanır.

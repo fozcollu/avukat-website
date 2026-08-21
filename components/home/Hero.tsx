@@ -2,11 +2,11 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
-// Stock photo (Unsplash, free license) — dark wood office with bookshelves,
-// premium/moody lighting. Swap for a real office photo when available (see
-// public/images/PROMPTS.md). Photo: Florian Peeters — public/images/CREDITS.md.
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1767277680055-34f1eeec0c26?w=1920&h=1080&fit=crop&fm=jpg&q=80";
+// Stock photo (Unsplash, free license), self-hosted locally — dark wood
+// office with bookshelves, premium/moody lighting. Swap for a real office
+// photo when available (see public/images/PROMPTS.md). Photo: Florian
+// Peeters — public/images/CREDITS.md.
+const HERO_IMAGE = "/images/hero/office-hero.jpg";
 
 export default function Hero() {
   const t = useTranslations("home.hero");
@@ -21,7 +21,6 @@ export default function Hero() {
           alt="Kosova Hukuk Bürosu ofisi"
           fill
           priority
-          unoptimized
           sizes="100vw"
           className="object-cover"
         />

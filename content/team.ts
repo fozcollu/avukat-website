@@ -24,7 +24,7 @@ export const team: TeamMember[] = [
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
     // Photo: Tony Luginsland (Unsplash, free) — see public/images/CREDITS.md.
     photo:
-      "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?w=800&h=1000&fit=crop&fm=jpg&q=80",
+      "/images/team/salih-seref-kosova.jpg",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -56,7 +56,7 @@ export const team: TeamMember[] = [
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريكة مؤسسة" },
     // Photo: Troy Spoelma (Unsplash, free) — see public/images/CREDITS.md.
     photo:
-      "https://images.unsplash.com/photo-1701096374092-bb70915fdc5c?w=800&h=1000&fit=crop&fm=jpg&q=80",
+      "/images/team/zeynep-aksu-kosova.jpg",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -88,7 +88,7 @@ export const team: TeamMember[] = [
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
     // Photo: Jeppe Mønster (Unsplash, free) — see public/images/CREDITS.md.
     photo:
-      "https://images.unsplash.com/photo-1648474484044-bb82df2f5a1f?w=800&h=1000&fit=crop&fm=jpg&q=80",
+      "/images/team/mehmet-can-gonul.jpg",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
