@@ -5,7 +5,7 @@ date: "2026-06-10"
 excerpt: "The division of property acquired during marriage is one of the most common questions in divorce proceedings. This article summarizes the matrimonial property regime and division principles."
 practiceAreaSlug: "aile-ve-miras-hukuku"
 author: "zeynep-aksu-kosova"
-coverImage: ""
+coverImage: "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=1200&h=675&fit=crop&fm=jpg&q=80"
 ---
 
 Under Turkish law, the division of property acquired during marriage is largely determined by the **matrimonial property regime** between the spouses. Unless otherwise agreed, the **participation in acquired property regime** applies from the date of marriage.

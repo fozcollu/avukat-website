@@ -1,53 +1,61 @@
-# Görseller — Durum ve Geçmiş
+# Görseller — Kaynaklar ve Yedek Tasarım
 
 ## Şu anki durum
 
-Hero, avukat portreleri ve blog kapakları şu an **tamamen yerel, ağ
-gerektirmeyen** tasarımlarla gösteriliyor:
-
-- `components/ui/Monogram.tsx` — avukat kartları/CV sayfası: isim baş
-  harfleri + gradyan + ince "terazi" motifi.
-- `components/ui/AbstractPanel.tsx` — hero ve blog kapakları: koyu gradyan +
-  büyük, soluk bir ikon (blog kapaklarında ilgili pratik alanın ikonu).
-
-Bu bileşenler hiçbir dış görsele bağımlı değil, bu yüzden ağ durumu ne
-olursa olsun asla "kırık görsel" olarak görünmezler.
-
-## Neden Unsplash'ten vazgeçildi
-
-İlk denemede hero + 3 portre + 2 blog kapağı için Unsplash'ten ücretsiz
-lisanslı stok fotoğraflar bulunup `next/image` ile uzaktan bağlanmıştı.
-Ancak bu geliştirme ortamının ağ erişimi görsel CDN'lerine (`images.unsplash.com`
-dahil) kısıtlı/kararsız çıktı — bazı denemelerde görseller yüklendi, bazılarında
-"kırık görsel" ikonu olarak göründü. Güvenilir olmadığı için bu yaklaşım
-terk edildi.
-
-Kullanılan (artık aktif olmayan) fotoğrafların kaynakları, ileride tekrar
-denenmek istenirse diye burada arşivlendi (Unsplash Lisansı, ücretsiz):
+Hero, avukat portreleri ve blog kapakları **gerçek stok fotoğraflarla**
+(Unsplash, ücretsiz lisans) gösteriliyor — `next/image` ile `unoptimized`
+olarak (tarayıcı görseli doğrudan Unsplash CDN'inden çeker, sunucu
+tarafında yeniden işlemez; bkz. "Neden unoptimized" aşağıda).
 
 | Kullanım | Fotoğrafçı | Unsplash Sayfası |
 |---|---|---|
-| Hero — ofis resepsiyon görseli | Revendo | `unsplash.com/photos/a-black-and-white-reception-desk-with-a-plant-in-front-of-it-HdYPD_Tgx94` |
+| Hero — koyu ahşap ofis / kitaplık | Florian Peeters | `unsplash.com/photos/an-office-with-a-desk-chair-and-bookshelves-ugkOAFZZlxw` |
 | Salih Şeref Kosova — portre | Tony Luginsland | `unsplash.com/photos/a-man-in-a-suit-posing-for-a-picture-bbOOTiq-EPA` |
 | Zeynep Aksu Kosova — portre | Troy Spoelma | `unsplash.com/photos/a-woman-with-long-hair-wearing-a-blue-blazer-EV8PPQG6zxY` |
 | Mehmet Can Gönül — portre | Jeppe Mønster | `unsplash.com/photos/a-man-in-a-suit-and-tie-posing-for-a-picture-qIZNyuZe638` |
 | Blog — "Boşanma / Mal Paylaşımı" | Mariano Rivas | `unsplash.com/photos/gold-wedding-bands-on-fabric-ZYet8yoepik` |
 | Blog — "İşten Haksız Çıkarılma" | Amari Shutters | `unsplash.com/photos/two-businessmen-shaking-hands-across-a-desk-9h8Nhj8fy_E` |
 
-## Gerçek Görsele Geçiş
+Tümü [Unsplash Lisansı](https://unsplash.com/license) kapsamında ücretsiz
+kullanım içindir.
 
-Gerçek fotoğraf (stüdyo çekimi, AI üretimi veya güvenilir bir CDN'den
-indirilmiş dosya) elinize geçtiğinde:
+## Yedek tasarım (fallback)
 
-1. Dosyayı `public/images/team/<slug>.jpg` veya `public/images/blog/<slug>.jpg`
-   yoluna koyun.
-2. `content/team.ts` içindeki ilgili kişinin `photo` alanına bu yolu yazın
-   (`photo: "/images/team/salih-seref-kosova.jpg"`), ya da blog yazısının
-   frontmatter'ındaki `coverImage` alanını doldurun.
-3. Bileşenler (`TeamMemberCard`, `LawyerProfileHeader`, `BlogPostCard`, blog
-   detay sayfası) `photo`/`coverImage` doluysa otomatik olarak gerçek
-   görseli (`next/image` ile) gösterir, boşsa placeholder'a döner — başka
-   bir kod değişikliği gerekmez.
+`content/team.ts`'te bir kişinin `photo` alanı boşsa veya bir blog
+yazısının `coverImage`'ı boşsa, bileşenler otomatik olarak ağ gerektirmeyen
+tasarımlara döner:
 
-AI ile görsel üretmek isterseniz `public/images/PROMPTS.md`'deki hazır
-prompt'ları kullanabilirsiniz.
+- `components/ui/Monogram.tsx` — isim baş harfleri + gradyan
+- `components/ui/AbstractPanel.tsx` — koyu gradyan + büyük soluk ikon
+
+Bu, ileride bir görsel URL'si geçici olarak erişilemez olursa (ya da yeni
+bir kişi/yazı için henüz foto girilmemişse) sitenin asla "kırık görsel"
+göstermemesini sağlar.
+
+## Neden `unoptimized`
+
+`next/image` normalde görseli **sunucu tarafında** indirip yeniden boyutlandırır.
+Bazı ağ/hosting ortamlarında (bu geliştirme sandbox'ı dahil) sunucunun
+üçüncü parti bir CDN'e ulaşamaması `/_next/image` üzerinden `500` hatasına
+yol açabiliyor. `unoptimized` ile bu adım atlanır, tarayıcı görseli
+doğrudan Unsplash'ten çeker — bu, normal internet erişimi olan tarayıcılar
+için (yani gerçek ziyaretçiler için) en güvenilir yoldur.
+
+**Not:** Bu geliştirme ortamının kendi ağ erişimi `images.unsplash.com`'a
+tutarsız/kısıtlı olduğundan, buradan alınan ekran görüntülerinde görsel
+bazen kırık çıkabilir — bu, koddaki bir hatadan değil, bu özel ortamın ağ
+kısıtından kaynaklanır. Gerçek tarayıcıda/deploy'da bu sorun yaşanmaz.
+
+## Gerçek/AI Görsele Geçiş
+
+Daha sonra bu stok fotoğrafları gerçek ofis/portre fotoğrafları veya AI
+üretimi görsellerle değiştirmek isterseniz:
+
+1. Dosyayı `public/images/team/<slug>.jpg` veya `public/images/hero/` ya da
+   `public/images/blog/<slug>.jpg` yoluna koyun.
+2. `content/team.ts`'teki `photo` alanını ya da blog yazısının
+   `coverImage` frontmatter alanını bu yerel yolla değiştirin.
+3. Hiçbir bileşen değişikliği gerekmez — `PortraitImage` yerel/uzak her iki
+   kaynağı da otomatik olarak doğru şekilde gösterir.
+
+AI ile görsel üretmek için hazır prompt'lar: `public/images/PROMPTS.md`.

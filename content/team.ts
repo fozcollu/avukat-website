@@ -6,11 +6,9 @@ export type TeamMember = {
   slug: string;
   name: string;
   title: { tr: string; en: string; ar: string };
-  // Local path only (e.g. "/images/team/slug.jpg"). Left unset until a real
-  // (or AI-generated) portrait exists — components fall back to a designed
-  // Monogram placeholder rather than depending on a third-party image CDN,
-  // which proved unreliable to hotlink from this environment. See
-  // public/images/PROMPTS.md.
+  // Local path ("/images/team/slug.jpg") or a full https:// URL (currently
+  // Unsplash stock photos — see public/images/CREDITS.md). Falls back to a
+  // designed Monogram placeholder when unset.
   photo?: string;
   education: { tr: string[]; en: string[]; ar: string[] };
   barAdmission: { tr: string; en: string; ar: string };
@@ -24,6 +22,9 @@ export const team: TeamMember[] = [
     slug: "salih-seref-kosova",
     name: "Salih Şeref Kosova",
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
+    // Photo: Tony Luginsland (Unsplash, free) — see public/images/CREDITS.md.
+    photo:
+      "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?w=800&h=1000&fit=crop&fm=jpg&q=80",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -53,6 +54,9 @@ export const team: TeamMember[] = [
     slug: "zeynep-aksu-kosova",
     name: "Zeynep Aksu Kosova",
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريكة مؤسسة" },
+    // Photo: Troy Spoelma (Unsplash, free) — see public/images/CREDITS.md.
+    photo:
+      "https://images.unsplash.com/photo-1701096374092-bb70915fdc5c?w=800&h=1000&fit=crop&fm=jpg&q=80",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
@@ -82,6 +86,9 @@ export const team: TeamMember[] = [
     slug: "mehmet-can-gonul",
     name: "Mehmet Can Gönül",
     title: { tr: "Kurucu Avukat", en: "Founding Partner", ar: "شريك مؤسس" },
+    // Photo: Jeppe Mønster (Unsplash, free) — see public/images/CREDITS.md.
+    photo:
+      "https://images.unsplash.com/photo-1648474484044-bb82df2f5a1f?w=800&h=1000&fit=crop&fm=jpg&q=80",
     education: {
       tr: ["[TASLAK] Hukuk Fakültesi, Lisans"],
       en: ["[DRAFT] Faculty of Law, LL.B."],
